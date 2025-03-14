@@ -1,146 +1,132 @@
 [
   {
-    "id": 1,
-    "question": "What are the differences between hard disk drives and solid state disks? (Choose two.)",
-    "options": [
-      "Hard disks can fail due to physical damage, while solid state disks cannot fail.",
-      "Solid state disks can store many times as much data as hard disk drives.",
-      "/dev/sda is a hard disk device while /dev/ssda is a solid state disk.",
-      "Solid state disks provide faster access to stored data than hard disks.",
-      "Hard disks have a motor and moving parts, solid state disks do not."
-    ],
-    "answer": [
-      "Hard disks have a motor and moving parts, solid state disks do not.",
-      "Solid state disks provide faster access to stored data than hard disks."
-    ]
-  },
-  {
-    "id": 2,
-    "question": "Members of a team already have experience using Red Hat Enterprise Linux. For a small hobby project, the team wants to set up a Linux server without paying for a subscription. Which of the following Linux distributions allows the team members to apply as much of their Red Hat Enterprise Linux knowledge as possible?",
-    "options": [
-      "CentOS",
-      "Debian GNU/Linux",
-      "Ubuntu Linux LTS",
-      "openSUSE",
-      "Raspbian"
-    ],
-    "answer": [
-      "CentOS"
-    ]
-  },
-  {
-    "id": 3,
-    "question": "Reverse DNS assigns hostnames to IP addresses. How is the name of the IP address 198.51.100.165 stored on a DNS server?",
-    "options": [
-      "In the A record for 165.100.51.198.ipv4.arpa.",
-      "In the REV record for arpa.in-addr.198.51.100.165.",
-      "In the RNAME record for 198-51-100-165.rev.arpa.",
-      "In the ARPA record for 165.100.51.198.rev.",
-      "In the PTR record for 165.100.51.198.in-addr.arpa."
-    ],
-    "answer": [
-      "In the PTR record for 165.100.51.198.in-addr.arpa."
-    ]
-  },
-  {
-    "id": 4,
-    "question": "Which of the following types of bus can connect hard disk drives with the motherboard?",
-    "options": [
-      "The RAM bus",
-      "The NUMA bus",
-      "The Auto bus",
-      "The CPU bus",
-      "The SATA bus"
-    ],
-    "answer": [
-      "The SATA bus"
-    ]
-  },
-  {
-    "id": 5,
-    "question": "Which of the following commands can be used to resolve a DNS name to an IP address?",
-    "options": [
-      "dnsname",
-      "query",
-      "dns",
-      "iplookup",
-      "host"
-    ],
-    "answer": [
-      "host"
-    ]
-  },
-  {
-    "id": 6,
-    "question": "What information can be displayed by top?",
-    "options": [
-      "User accounts, ordered by the number of files.",
-      "Running processes, ordered by CPU or RAM consumption.",
-      "User accounts, ordered by the number of logins.",
-      "User groups, ordered by the number of members.",
-      "Existing files, ordered by their size."
-    ],
-    "answer": [
-      "Running processes, ordered by CPU or RAM consumption."
-    ]
-  },
-  {
-    "id": 7,
-    "question": "Which of the following outputs comes from the command free?",
-    "options": [
-      "A. 21:04 up 14 dats, 7:43, 3 users, load average: 0.89, 1.00, 0.99",
-      "avg-cpu:  %user   %nice %system %iowait  %steal   %idle\n16.36    0.00    2.99    1.06    0.00   79.59",
-      "Filesystem      Size  Used Avail Use% Mounted on \n/dev/nvme0n1p2  468G   33G  412G   8% /",
-      "120K  /tmp",
-      "total        used        free      shared  buff/cache   available\nMem:            15Gi       2.3Gi         9Gi       910Mi       3.0Gi        11Gi\nSwap:          2.0Gi          0B       2.0Gi"
-    ],
-    "answer": [
-      "total        used        free      shared  buff/cache   available\nMem:            15Gi       2.3Gi         9Gi       910Mi       3.0Gi        11Gi\nSwap:          2.0Gi          0B       2.0Gi"
-    ]
-  },
-  {
-    "id": 8,
-    "question": "What is true about the dmesg command? (Choose two.)",
-    "options": [
-      "It might not display older information because it was overwritten by newer information.",
-      "It sends messages to the command lines of all current user sessions.",
-      "It traces the execution of a command and shows each step the program carries out.",
-      "It displays the content of the Linux kernel\u2019s ring buffer.",
-      "It immediately outputs all new messages written to the system journal."
-    ],
-    "answer": [
-      "It displays the content of the Linux kernel\u2019s ring buffer.",
-      "It might not display older information because it was overwritten by newer information."
-    ]
-  },
-  {
-    "id": 9,
-    "question": "Which of the following outputs could stem from the command last?",
-    "options": [
-      "1 ls\n 2 cat text.txt\n 3 logout",
-      "Password for user last changed at Sat Mar 31 16:38:57 EST 2018",
-      "Last login: Fri Mar 23 10:56:39 2018 from server.example.com",
-      "EXT4-fs(dm7): mountes filesystem with ordered data mode. Opts: (null)",
-      "root tty2 Wed May 17 21:11 - 21:11 (00:00)"
-    ],
-    "answer": [
-      "root tty2 Wed May 17 21:11 - 21:11 (00:00)"
-    ]
-  },
-  {
-    "id": 10,
-    "question": "What is true about the owner of a file?",
-    "options": [
-      "The user owning a file must be a member of the file\u2019s group.",
-      "The owner of a file cannot be changed once it is assigned to an owner.",
-      "Each file is owned by exactly one user and one group.",
-      "The owner of a file always has full permissions when accessing the file.",
-      "When a user is deleted, all files owned by the user disappear."
-    ],
-    "answer": [
-      "Each file is owned by exactly one user and one group."
-    ]
-  },
+        "id": 1,
+        "question": "Al crear un OCI Vault, ¿qué factores pueden llevar a seleccionar el Virtual Private Vault? (Selecciona DOS respuestas correctas)",
+        "options": [
+            "Necesidad de más de 9211 versiones de clave",
+            "Mayor grado de aislamiento",
+            "Para enmascarar datos PII en un entorno no productivo",
+            "Capacidad de hacer una copia de seguridad del Vault"
+        ],
+        "answer": [
+            "Mayor grado de aislamiento",
+            "Capacidad de hacer una copia de seguridad del Vault"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Cloud Guard detectó una puntuación de riesgo de cero en el panel de control, ¿qué significa esto?",
+        "options": [
+            "La puntuación de riesgo no significa nada. Son solo números",
+            "Problemas de nivel BAJO o MENOR",
+            "Gran cantidad de problemas con altos niveles de riesgo (ALTO o CRÍTICO)",
+            "No se detectaron problemas en ningún recurso"
+        ],
+        "answer": ["No se detectaron problemas en ningún recurso"]
+    },
+    {
+        "id": 3,
+        "question": "Con respecto a la vulnerabilidad y las pruebas de penetración en la nube, ¿qué reglas de compromiso se aplican? (Selecciona DOS respuestas correctas)",
+        "options": [
+            "Cualquier escaneo de puertos debe realizarse en modo agresivo",
+            "Está prohibida la prueba de penetración y vulnerabilidad en las instalaciones de Oracle",
+            "Las pruebas deben dirigirse a cualquier otra suscripción o recursos de otros clientes de Oracle Cloud",
+            "Eres responsable de cualquier daño causado a los clientes de Oracle Cloud debido a tus actividades de prueba"
+        ],
+        "answer": [
+            "Está prohibida la prueba de penetración y vulnerabilidad en las instalaciones de Oracle",
+            "Eres responsable de cualquier daño causado a los clientes de Oracle Cloud debido a tus actividades de prueba"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "¿Cómo puedes establecer conectividad privada entre dos VCN en la misma región OCI sin que el tráfico pase por Internet público?",
+        "options": [
+            "NAT Gateway",
+            "Data Guard",
+            "Remote VCN Peering",
+            "Local VCN Peering"
+        ],
+        "answer": ["Local VCN Peering"]
+    },
+    {
+        "id": 5,
+        "question": "¿Qué problemas de seguridad puede identificar el Oracle Vulnerability Scanning Service? (Selecciona DOS respuestas correctas)",
+        "options": [
+            "Ataques de denegación de servicio distribuido (DDoS)",
+            "Puertos abiertos accidentalmente que pueden ser vectores de ataque",
+            "Inyección SQL",
+            "Puntos de referencia estándar de la industria publicados por CIS"
+        ],
+        "answer": [
+            "Puertos abiertos accidentalmente que pueden ser vectores de ataque",
+            "Puntos de referencia estándar de la industria publicados por CIS"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "¿Qué recursos se pueden crear y gestionar desde el Vault Service? (Selecciona DOS respuestas correctas)",
+        "options": [
+            "Secret",
+            "IAM",
+            "Keys",
+            "Cloud Guard"
+        ],
+        "answer": [
+            "Secret",
+            "Keys"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "¿Cuál es la configuración CORRECTA de VCN con respecto al emparejamiento de VCN dentro de una misma región?",
+        "options": [
+            "12.0.0.0/16 y 194.168.0.0/16",
+            "12.0.0.0/16 y 12.0.0.0/16",
+            "194.168.0.0/24 y 194.168.0.0/24",
+            "194.168.0.0/24 y 194.168.0.0/16"
+        ],
+        "answer": ["12.0.0.0/16 y 194.168.0.0/16"]
+    },
+    {
+        "id": 8,
+        "question": "¿Qué política de IAM debería crearse para dar al grupo XYZ la capacidad de listar el contenido de un recurso, excluyendo la necesidad de autenticarse en el compartimiento 'prod'?",
+        "options": [
+            "Allow group XYZ to manage all resources in compartment != prod",
+            "Allow group XYZ to use all resources in compartment != prod",
+            "Allow group XYZ to inspect all resources in tenancy where target.compartment.name != prod",
+            "Allow group XYZ to read all resources in tenancy where target.compartment.name != prod"
+        ],
+        "answer": ["Allow group XYZ to inspect all resources in tenancy where target.compartment.name != prod"]
+    },
+    {
+        "id": 9,
+        "question": "¿Cuáles afirmaciones son CORRECTAS sobre la autenticación multifactor en OCI? (Selecciona DOS respuestas correctas)",
+        "options": [
+            "Los miembros del grupo Administrators pueden deshabilitar MFA para otros usuarios",
+            "Los usuarios no pueden habilitar MFA por sí mismos",
+            "Un usuario puede registrar múltiples dispositivos para usar con MFA",
+            "Los miembros del grupo Administrators no pueden habilitar MFA para otro usuario"
+        ],
+        "answer": [
+            "Los miembros del grupo Administrators pueden deshabilitar MFA para otros usuarios",
+            "Los miembros del grupo Administrators no pueden habilitar MFA para otro usuario"
+        ]
+    },
+    {
+        "id": 10,
+        "question": "¿Cuáles afirmaciones son CORRECTAS sobre la política de Security Zone en OCI? (Selecciona DOS respuestas correctas)",
+        "options": [
+            "Un volumen de bloque puede moverse de una zona de seguridad a un compartimiento estándar",
+            "Un bucket no puede moverse de una zona de seguridad a un compartimiento estándar",
+            "Los recursos en una zona de seguridad deben ser accesibles desde Internet",
+            "Los recursos en una zona de seguridad deben estar cifrados usando claves administradas por el cliente"
+        ],
+        "answer": [
+            "Un bucket no puede moverse de una zona de seguridad a un compartimiento estándar",
+            "Los recursos en una zona de seguridad deben estar cifrados usando claves administradas por el cliente"
+        ]
+    },
   {
     "id": 11,
     "question": "What is the UID of the user root?",

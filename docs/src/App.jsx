@@ -18,7 +18,7 @@ const App = () => {
     const [wrongAnswers, setWrongAnswers] = useState([]);
 
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/Noam-Alum/lpi_010_160_exam/refs/heads/main/lpi/lpi_questions.json")
+        fetch("https://raw.githubusercontent.com/Eddi-Rosales/oracle-exam-17-03/refs/heads/main/lpi/lpi_questions.json")
             .then((res) => res.json())
             .then((data) => {
                 setQuestions(shuffleArray(data));
